@@ -45,5 +45,9 @@
 <script>
     function run() {
         document.getElementsByClassName("alert")[0].classList.remove('d-none')
+
+        setTimeout(() => {
+            document.getElementsByClassName("alert")[0].classList.add('d-none')
+        }, 3000);
     }
 </script>
