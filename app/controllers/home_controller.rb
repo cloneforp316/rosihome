@@ -10,6 +10,10 @@ class HomeController < ApplicationController
     head :ok
   end
 
+  def results
+    @posts = Post.all
+  end
+
   def permit_params
     params.permit(:name, :phone, :message)
   end
