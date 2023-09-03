@@ -1,10 +1,10 @@
 <div id="form" class='ladi-element'>
-    <form autocomplete="off" method="post" class='ladi-form' action="/posts" remote="true">
+    <form autocomplete="off" method="post" class='ladi-form' action="/posts" >
         <div id="BUTTON1631" class='ladi-element'>
             <div class='ladi-button'>
                 <div class="ladi-button-background"></div>
                 <div id="BUTTON_TEXT1631" class='ladi-element ladi-button-headline'>
-                    <input type="submit" class='ladi-headline' value='ĐĂNG KÍ NGAY' style="height: 100%; background-color: rgb(201, 170, 107); ">
+                    <input type="submit" class='ladi-headline submit_button' onclick="run()" value='ĐĂNG KÍ NGAY'>
                 </div>
             </div>
         </div>
@@ -34,3 +34,16 @@
         </div>
     </form>
 </div>
+
+<style>
+    .submit_button {
+        height: 100%;
+        background-color: rgb(201, 170, 107);
+    }
+</style>
+
+<script>
+    function run() {
+        document.getElementsByClassName("alert")[0].classList.remove('d-none')
+    }
+</script>

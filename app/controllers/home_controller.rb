@@ -5,9 +5,9 @@ class HomeController < ApplicationController
 
   def posts
     post = Post.new(permit_params)
-    if post.save
+    post.save
 
-    end
+    head :ok
   end
 
   def permit_params

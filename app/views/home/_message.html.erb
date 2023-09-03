@@ -1,7 +1,9 @@
-<div class="ladipage-message d-none">
-    <div class="ladipage-message-box"><span>Alert</span>
-        <div class="ladipage-message-text">Cảm ơn bạn đã quan tâm!</div><button
-            class="ladipage-message-close">OK</button>
+<div class="ladipage-message alert d-none">
+    <div class="ladipage-message-box"><span>Thông báo</span>
+        <div class="ladipage-message-text">Cảm ơn bạn đã quan tâm!</div>
+        <button
+            class="ladipage-message-close"
+            onclick='close()'>OK</button>
     </div>
 </div>
 
@@ -10,3 +12,9 @@
         display: none;
     }
 </style>
+
+<script>
+    function close() {
+        document.getElementsByClassName("alert")[0].classList.add('d-none')
+    }
+</script>
